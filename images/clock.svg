@@ -1,0 +1,25 @@
+<svg width="448" height="448" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#FFF" />
+    <g transform="translate(24 24)">
+      <circle stroke="#000" stroke-width="12" fill="#fff" cx="200" cy="200" r="212" />
+      <g fill="#000" fill-opacity="0.8" font-family="HelveticaNeue-Bold, Helvetica Neue, Arial, sans-serif" font-size="20"
+        font-weight="bold" opacity="0.9">
+        <text><tspan x="190" y="25">12</tspan></text>
+        <text><tspan x="380" y="205">3</tspan></text>
+        <text><tspan x="195" y="390">6</tspan></text>
+        <text><tspan x="10" y="205">9</tspan></text>
+      </g>
+      <g>
+        <circle fill-opacity="0.5" fill="#000" cx="40" cy="110" r="3" />
+        <circle fill-opacity="0.5" fill="#000" cx="110" cy="40" r="3" />
+        <circle fill-opacity="0.5" fill="#000" cx="290" cy="40" r="3" />
+        <circle fill-opacity="0.5" fill="#000" cx="360" cy="110" r="3" />
+        <circle fill-opacity="0.5" fill="#000" cx="360" cy="290" r="3" />
+        <circle fill-opacity="0.5" fill="#000" cx="290" cy="360" r="3" />
+        <circle fill-opacity="0.5" fill="#000" cx="110" cy="360" r="3" />
+        <circle fill-opacity="0.5" fill="#000" cx="40" cy="290" r="3" />
+      </g>
+    </g>
+  </g>
+</svg>

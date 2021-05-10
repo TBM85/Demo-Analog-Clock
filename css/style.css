@@ -8,4 +8,9 @@ html {
   font-family: 'Girassol', cursive;
   text-align: center;
   min-height: 100vh;
+  min-width: 24em;
+}
+.clock img {
+  width: 22rem;
+  height: 22rem;
 }
