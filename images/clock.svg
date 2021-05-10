@@ -11,14 +11,17 @@
         <text><tspan x="10" y="205">9</tspan></text>
       </g>
       <g>
-        <circle fill-opacity="0.5" fill="#000" cx="40" cy="110" r="3" />
-        <circle fill-opacity="0.5" fill="#000" cx="110" cy="40" r="3" />
-        <circle fill-opacity="0.5" fill="#000" cx="290" cy="40" r="3" />
-        <circle fill-opacity="0.5" fill="#000" cx="360" cy="110" r="3" />
-        <circle fill-opacity="0.5" fill="#000" cx="360" cy="290" r="3" />
-        <circle fill-opacity="0.5" fill="#000" cx="290" cy="360" r="3" />
-        <circle fill-opacity="0.5" fill="#000" cx="110" cy="360" r="3" />
-        <circle fill-opacity="0.5" fill="#000" cx="40" cy="290" r="3" />
+        <circle fill-opacity="0.5" fill="#000" cx="40.5" cy="109" r="3" />
+        <circle fill-opacity="0.5" fill="#000" cx="109" cy="40.5" r="3" />
+        <circle fill-opacity="0.5" fill="#000" cx="292.5" cy="40.5" r="3" />
+        <circle fill-opacity="0.5" fill="#000" cx="359" cy="109" r="3" />
+        <circle fill-opacity="0.5" fill="#000" cx="359" cy="292.5" r="3" />
+        <circle fill-opacity="0.5" fill="#000" cx="292.5" cy="359" r="3" />
+        <circle fill-opacity="0.5" fill="#000" cx="109" cy="359" r="3" />
+        <circle fill-opacity="0.5" fill="#000" cx="40.5" cy="292.5" r="3" />
+      </g>
+      <g>
+        <circle fill-opacity="0.5" fill="#000" cx="200" cy="200" r="3" />
       </g>
     </g>
   </g>
