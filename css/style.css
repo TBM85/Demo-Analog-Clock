@@ -10,6 +10,11 @@
     top: 40%;
     left: 15%;
   }
+  .minute-hand {
+    width: 38%;
+    top: 39.8%;
+    left: 15.2%;
+  }
 }
 @media (min-width: 576px) and (max-width: 991px) {
   .clock img {
@@ -21,6 +26,11 @@
     top: 27.3%;
     left: 29%;
   }
+  .minute-hand {
+    width: 20%;
+    top: 27.2%;
+    left: 30%;
+  }
 }
 @media (min-width: 992px) {
   .clock img {
@@ -31,6 +41,11 @@
     width: 13.5%;
     top: 39%;
     left: 36.5%;
+  }
+  .minute-hand {
+    width: 19%;
+    top: 38.8%;
+    left: 31%;
   }
 }
 
@@ -56,4 +71,18 @@ html {
   height: 2px;
   border-radius: 0.5em;
   background: red;
+}
+.minute-hand {
+  height: 4px;
+  background: #000;
+}
+.minute-hand:before {
+  border: 5px solid #000;
+  content: '';
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-top-color: transparent;
+  position: absolute;
+  bottom: -3px;
+  left: -10px;
 }
