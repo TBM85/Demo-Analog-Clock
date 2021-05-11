@@ -11,9 +11,14 @@
     left: 15%;
   }
   .minute-hand {
-    width: 38%;
+    width: 36.5%;
     top: 39.8%;
-    left: 15.2%;
+    left: 16.9%;
+  }
+  .hand.hour-hand {
+    width: 17.3%;
+    top: 39.7%;
+    left: 36%;
   }
 }
 @media (min-width: 576px) and (max-width: 991px) {
@@ -48,9 +53,14 @@
     left: 36.5%;
   }
   .minute-hand {
-    width: 19%;
+    width: 12.5%;
     top: 38.8%;
-    left: 31%;
+    left: 37.5%;
+  }
+  .hand.hour-hand {
+    width: 10%;
+    top: 38.7%;
+    left: 40%;
   }
 }
 
@@ -73,19 +83,31 @@ html {
   transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 }
 .seconds-hand {
-  height: 2px;
+  height: 1.5px;
   border-radius: 0.5em;
   background: red;
 }
-.minute-hand,
-.hour-hand {
+.minute-hand {
   height: 4px;
   background: #000;
 }
-.minute-hand:before,
-.hour-hand:before {
-  border: 5px solid #000;
+.hour-hand {
+  height: 6px;
+  background: #000;
+}
+.minute-hand:before {
   content: '';
+  border: 5px solid #000;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-top-color: transparent;
+  position: absolute;
+  bottom: -3px;
+  left: -10px;
+}
+.hour-hand:before {
+  content: '';
+  border: 6px solid #000;
   border-left-color: transparent;
   border-bottom-color: transparent;
   border-top-color: transparent;
