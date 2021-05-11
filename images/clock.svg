@@ -21,8 +21,8 @@
         <text><tspan x="10" y="205">9</tspan></text>
       </g>
       <g fill="#000" font-family="Girassol, Arial, sans-serif" opacity="0.8">
-        <text x="183" y="235" class="text" font-size="9" fill-opacity="0.8">TBM85</text>
-        <text x="163" y="245" class="text" font-size="8" fill-opacity="0.6">All rights reserved</text>
+        <text x="183" y="265" class="text" font-size="9" fill-opacity="0.8">TBM85</text>
+        <text x="163" y="275" class="text" font-size="8" fill-opacity="0.6">All rights reserved</text>
       </g>
       <g fill="#000">
         <circle fill-opacity="0.5" cx="40.5" cy="109" r="3" />

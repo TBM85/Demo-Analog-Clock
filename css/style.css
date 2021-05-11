@@ -1,82 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
 
-@media (max-width: 575px) {
-  .clock img {
-    width: 22rem;
-    height: 22rem;
-  }
-  .seconds-hand {
-    width: 38.5%;
-    top: 40%;
-    left: 15%;
-  }
-  .minute-hand {
-    width: 36.5%;
-    top: 39.8%;
-    left: 16.9%;
-  }
-  .hand.hour-hand {
-    width: 17.3%;
-    top: 39.7%;
-    left: 36%;
-  }
-}
-@media (min-width: 576px) and (max-width: 991px) {
-  .clock img {
-    width: 25rem;
-    height: 25rem;
-  }
-  .seconds-hand {
-    width: 21%;
-    top: 27.3%;
-    left: 29%;
-  }
-  .minute-hand {
-    width: 20%;
-    top: 27.2%;
-    left: 30%;
-  }
-  .hand.hour-hand {
-    width: 14%;
-    top: 27.2%;
-    left: 36%;
-  }
-}
-@media (min-width: 992px) {
-  .clock img {
-    width: 30rem;
-    height: 30rem;
-  }
-  .seconds-hand {
-    width: 13.5%;
-    top: 39%;
-    left: 36.5%;
-  }
-  .minute-hand {
-    width: 12.5%;
-    top: 38.8%;
-    left: 37.5%;
-  }
-  .hand.hour-hand {
-    width: 10%;
-    top: 38.7%;
-    left: 40%;
-  }
-}
-
-*, 
-*::before, 
-*::after {
-  box-sizing: border-box;
-}
 html {
   font-family: 'Girassol', cursive;
+  background-color: floralwhite;
   text-align: center;
   min-height: 100vh;
   min-width: 24em;
 }
-.hand {
+body {
+  margin: 0;
+  display: grid;
+}
+.clock {
+  width: 30rem;
+  height: 30rem;
+  margin: 50px auto;
+  position: relative;
+  padding: 2rem;
+}
+.clock::after {
+  content: "";
   position: absolute;
+  background: #fff;
+  border: 1.5px solid #000;
+  border-radius: 1em;
+  width: 0.5em;
+  height: 0.5em;
+  left: 49%;
+  top: 46%;
+}
+.clock-face {
+  position: relative;
+  height: 100%;
+}
+.hand {
+  width: 50%;
+  position: absolute;
+  top: -48%;
   transform-origin: 100%;
   transform: rotate(90deg);
   transition: all 0.05s;
@@ -86,25 +46,47 @@ html {
   height: 1.5px;
   border-radius: 0.5em;
   background: red;
+  width: 12em;
+  left: 10%;
+  top: -47.8%;
+  transform: rotate(270deg);
+}
+.seconds-hand:after{
+  content: "";
+  position: absolute;
+  background: red;
+  width: 10.5em;
+  height: 0.25em;
+  top: -0.05em;
+  left: 25px;
+}
+.seconds-hand:before{
+  content: "";
+  position: absolute;
+  background: red;
+  width: 0.5em;
+  height: 0.5em;
+  top: -0.2em;
+  border-radius: 0.5em;
+  left: 1.25em;
 }
 .minute-hand {
-  height: 4px;
+  height: 6px;
   background: #000;
+  width: 10.5em;
+  left: 15%;
+  top: -48.2%;
+  transform: rotate(360deg);
 }
 .hour-hand {
   height: 6px;
   background: #000;
+  width: 7em;
+  left: 26.7%;
+  top: -48.2%;
+  transform: rotate(90deg);
 }
-.minute-hand:before {
-  content: '';
-  border: 5px solid #000;
-  border-left-color: transparent;
-  border-bottom-color: transparent;
-  border-top-color: transparent;
-  position: absolute;
-  bottom: -3px;
-  left: -10px;
-}
+.minute-hand:before,
 .hour-hand:before {
   content: '';
   border: 6px solid #000;
