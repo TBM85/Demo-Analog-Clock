@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Girassol&display=swap");
 
 html {
-  font-family: 'Girassol', cursive;
+  font-family: "Girassol", cursive;
   background-color: floralwhite;
   text-align: center;
   min-height: 100vh;
@@ -18,7 +18,7 @@ body {
   position: relative;
   padding: 2rem;
 }
-.clock::after {
+.clock:after {
   content: "";
   position: absolute;
   background: #fff;
@@ -28,6 +28,23 @@ body {
   height: 0.5em;
   left: 49%;
   top: 46%;
+}
+.weekday:before {
+  content: attr(data-text);
+  position: absolute;
+  background: #fffaf0;
+  border: 1.5px solid #000;
+  border-radius: 1em;
+  width: 8em;
+  height: 1.5em;
+  left: 38%;
+  top: 25%;
+  align-items: flex-end;
+  display: flex;
+  justify-content: center;
+  box-shadow: rgb(51 51 51) 2px 2px 3px 0px inset,
+    rgb(255 255 255 / 50%) -3px -3px 6px 1px inset,
+    rgb(51 51 51) -2px 2px 3px 0px inset;
 }
 .clock-face {
   position: relative;
@@ -51,7 +68,7 @@ body {
   top: -47.8%;
   transform: rotate(270deg);
 }
-.seconds-hand:after{
+.seconds-hand:after {
   content: "";
   position: absolute;
   background: red;
@@ -60,7 +77,7 @@ body {
   top: -0.05em;
   left: 25px;
 }
-.seconds-hand:before{
+.seconds-hand:before {
   content: "";
   position: absolute;
   background: red;
@@ -88,7 +105,7 @@ body {
 }
 .minute-hand:before,
 .hour-hand:before {
-  content: '';
+  content: "";
   border: 6px solid #000;
   border-left-color: transparent;
   border-bottom-color: transparent;
