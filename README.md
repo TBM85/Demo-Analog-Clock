@@ -4,7 +4,7 @@
 ## Description
 An analog clock made with Vanilla Js, CSS3 and HTML5.
 
-![Analog Clock](assets/images/Analog-Clock.png)
+![Analog Clock](images/Analog-Clock.png)
 
 ## Resources
 * [Girassol Font](https://fonts.google.com/specimen/Girassol#standard-styles)
